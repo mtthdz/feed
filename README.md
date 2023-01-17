@@ -13,6 +13,6 @@ ________/\\\\\_______________________________________/\\\__
 ## Feed ##
 version 0.0.1 <br />
 
-Feed is a full stack application based on YCombinator's HackerNews and Reddit.
+Feed is a full stack application based on YCombinator's Hacker News and Reddit.
 The project's current focus is utilizing TypeScript in a React environment, however I plan to add in
 a backend to the project, possibly Supabase.
