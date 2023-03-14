@@ -14,5 +14,5 @@ ________/\\\\\_______________________________________/\\\__
 version 0.0.1 <br />
 
 Feed is a full stack application based on YCombinator's Hacker News and Reddit.
-The project's current focus is utilizing TypeScript in a React environment, however I plan to add in
-a backend to the project, possibly Supabase.
+The project's current focus is utilizing TypeScript in a NextJS environment, and building out a component library.
+Next steps includes a Postgres database and GraphQL API via Supabase. Auth server tbd.
