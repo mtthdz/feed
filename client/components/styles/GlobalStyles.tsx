@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components";
+// import { Source_Sans_3 } from 'next/font/google';
 
 export const GlobalStyles = createGlobalStyle`
   html {
@@ -23,7 +24,9 @@ export const GlobalStyles = createGlobalStyle`
   body {
     background-color: var(--black);
     color: var(--white);
-    font-size: 1.6rem;
+    font-family: 'Source_Sans_3', sans-serif;
+    font-weight: 300;
+    font-size: 1.4rem;
     line-height: 2;
   }
 
