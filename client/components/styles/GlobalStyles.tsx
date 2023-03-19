@@ -43,15 +43,27 @@ export const GlobalStyles = createGlobalStyle`
   a {
     text-decoration: none;
     color: var(--white);
-  }
-  
-  a:hover,
-  a:focus {
-    color: var(--lightGrey);
-    text-decoration: none;
+
+    a:hover,
+    a:focus {
+      color: var(--lightGrey);
+      text-decoration: none;
+    }
   }
 
   button {
-    font-family: 'radnika_next', --apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: none;
+    border: none;
+    padding: 2px;
+    color: var(--white);
+    font-family: 'Source_Sans_3', sans-serif;
+    font-weight: 300;    
+
+    &:hover,
+    &:focus {
+    color: var(--lightGrey);
+    cursor: pointer;
+    border: none;
+  }
   }
 `
