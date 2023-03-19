@@ -1,6 +1,6 @@
 import { ReactNode } from "react"
 import { WrapperStyles } from "../../styles/WrapperStyles"
-import PrimaryNav from "../PrimaryNav/PrimaryNav"
+import PrimaryNav from "../PrimaryNav"
 
 interface Props {
   children: ReactNode;
