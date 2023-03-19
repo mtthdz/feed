@@ -42,12 +42,13 @@ export const GlobalStyles = createGlobalStyle`
 
   a {
     text-decoration: none;
-    color: var(--black);
+    color: var(--white);
   }
   
   a:hover,
   a:focus {
-    text-decoration: underline;
+    color: var(--lightGrey);
+    text-decoration: none;
   }
 
   button {
