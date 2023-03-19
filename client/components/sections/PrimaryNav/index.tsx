@@ -30,9 +30,11 @@ const NavContainer = styled.section`
   padding: 0.8rem 2.2rem;
   border: none;
   border-radius: 0.75rem;
-  box-shadow: 0 0 0 1px #1e1e1e;
-  background-color: #1e1e1e90;
+  box-shadow: 0 0 0 1px #1e1e1e40;
+  background-color: #1e1e1e80;
+  backdrop-filter: blur(8px);
   transform: translate(-50%, 0);
+  z-index: 10;
 
   .site-title {
     width: 15%;

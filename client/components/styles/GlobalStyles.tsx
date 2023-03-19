@@ -44,8 +44,8 @@ export const GlobalStyles = createGlobalStyle`
     text-decoration: none;
     color: var(--white);
 
-    a:hover,
-    a:focus {
+    &:hover,
+    &:focus {
       color: var(--lightGrey);
       text-decoration: none;
     }
