@@ -3,7 +3,7 @@ import { GlobalStyles } from '@/components/styles/GlobalStyles'
 import { WrapperStyles } from '@/components/styles/WrapperStyles';
 import "@fortawesome/fontawesome-svg-core/styles.css"
 import { config } from "@fortawesome/fontawesome-svg-core"; 
-import Layout from '@/components/sections/Layout/Layout';
+import Layout from '@/components/sections/Layout';
 
 config.autoAddCss = false;
 
