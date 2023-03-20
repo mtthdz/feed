@@ -6,8 +6,8 @@ export const GlobalStyles = createGlobalStyle`
     --black: #0a0a0a;
     --white: #ffffff;
     --lightGrey: #adadad;
+    --darkGrey: #1e1e1e;
     --lightGray: var(--lightGrey);
-    --darkGrey: #1E1E1E;
     --darkGray: var(--darkGrey);
     --red: #ff6565;
     --green: #29ffa5;
@@ -42,15 +42,28 @@ export const GlobalStyles = createGlobalStyle`
 
   a {
     text-decoration: none;
-    color: var(--black);
-  }
-  
-  a:hover,
-  a:focus {
-    text-decoration: underline;
+    color: var(--white);
+
+    &:hover,
+    &:focus {
+      color: var(--lightGrey);
+      text-decoration: none;
+    }
   }
 
   button {
-    font-family: 'radnika_next', --apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: none;
+    border: none;
+    padding: 2px;
+    color: var(--white);
+    font-family: 'Source_Sans_3', sans-serif;
+    font-weight: 300;    
+
+    &:hover,
+    &:focus {
+    color: var(--lightGrey);
+    cursor: pointer;
+    border: none;
+  }
   }
 `
