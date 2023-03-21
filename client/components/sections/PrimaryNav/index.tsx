@@ -1,16 +1,23 @@
-import SearchToggle from '@/components/elements/SearchToggle';
 import Link from 'next/link';
 import styled from 'styled-components';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { ReactNode } from 'react';
 
-export default function PrimaryNav() {
+interface Props {
+  modalToggle: () => void;
+}
+
+export default function PrimaryNav({ modalToggle }: Props) {
   return (
     <NavContainer>
       <Link className='site-title' href='/'>feed</Link>
 
       <MainNavStyles>
+        <button type='button' onClick={() => modalToggle()}>Search</button>
         <Link href='/createPost'>Create</Link>
-        <SearchToggle />
         <Link href='/user'>Account</Link>
+        <Link href='https://github.com/mtthdz/feed' target='_blank'><FontAwesomeIcon icon={ faGithub } /></Link>
       </MainNavStyles>
     </NavContainer>
   )
@@ -55,7 +62,7 @@ const MainNavStyles = styled.div`
     justify-content: flex-end;
 
     & > * {
-      margin-right: 1rem;
+      margin: 0 0.5rem;
     }
 
     & > *:last-child {
