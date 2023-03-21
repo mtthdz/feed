@@ -1,6 +1,7 @@
 import { ReactNode } from "react"
 import { WrapperStyles } from "../../styles/WrapperStyles"
 import PrimaryNav from "../PrimaryNav"
+import SearchModal from "../SearchModal";
 
 interface Props {
   children: ReactNode;
@@ -9,8 +10,9 @@ interface Props {
 export default function Layout({ children }: Props) {
   return(
     <WrapperStyles>
-      <PrimaryNav />
       <main>{children}</main>
+      <PrimaryNav />
+      <SearchModal />
     </WrapperStyles>
   )
 }
