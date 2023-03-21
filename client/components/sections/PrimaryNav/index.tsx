@@ -1,4 +1,3 @@
-import SearchToggle from '@/components/elements/SearchToggle';
 import Link from 'next/link';
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
