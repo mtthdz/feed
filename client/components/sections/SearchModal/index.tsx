@@ -2,10 +2,17 @@ import { faSearch } from "@fortawesome/pro-light-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled from "styled-components"
 
-export default function SearchModal() {
+interface Props {
+  modalToggle: () => void;
+}
+
+export default function SearchModal({ modalToggle }: Props) {
   return (
-    <OverlayStyles>
-      <ModalStyles>
+    <OverlayStyles onClick={() => modalToggle()}>
+      <ModalStyles
+        onClick={(e) => e.stopPropagation()}
+        onSubmit={(e) => e.preventDefault()}
+      >
         <label>
           <FontAwesomeIcon className="label-icon" icon={faSearch} />
           <input type="text" name="search" />
