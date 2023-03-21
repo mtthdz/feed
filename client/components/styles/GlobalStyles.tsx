@@ -57,6 +57,7 @@ export const GlobalStyles = createGlobalStyle`
     padding: 2px;
     color: var(--white);
     font-family: 'Source_Sans_3', sans-serif;
+    font-size: 1.4rem;
     font-weight: 300;    
 
     &:hover,
