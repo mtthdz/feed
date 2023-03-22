@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const CardStyles = styled.div`
+export const CardContainer = styled.div`
   width: 100%;
   display: flex;
   flex-wrap: nowrap;
@@ -11,7 +11,7 @@ export const CardStyles = styled.div`
     background-color: var(--darkGrey);
   }
 
-  .card-number {
+  .card-index {
     margin-right: 10px;
     width: 20px;
     display: flex;
@@ -34,11 +34,9 @@ export const CardStyles = styled.div`
   }
 `;
 
-export const CardTitleStyles = styled.div`
-  .card-title {
-    font-weight: 500;
-    font-size: 1.6rem;
-  }
+export const CardTitle = styled.a`
+  font-weight: 500;
+  font-size: 1.6rem;
 
   .card-title-ref {
     margin-left: 8px;

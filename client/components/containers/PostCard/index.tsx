@@ -1,7 +1,6 @@
 import { PostMetadata } from "@/components/sections/DirectoryList";
 import Link from "next/link";
-import styled from "styled-components"
-import { CardStyles, CardTitleStyles } from "./PostCard.styles";
+import * as SC from "./PostCard.styles";
 import CardNav from "../CardNav";
 
 interface Props {
@@ -15,21 +14,22 @@ interface Props {
  * TODO: organize styling
  */
 export default function PostCard({ metadata }: Props) {
+  let url = metadata.url;
 
   return (
-    <CardStyles>
-      <div className="card-number">
+    <SC.CardContainer>
+      <div className="card-index">
         <p>{metadata.number}</p>
       </div>
 
       <div className='card-main'>
-        <CardTitleStyles>
-          <Link href='#' className='card-title'>{metadata.title}</Link>
-          <Link href='#' className='card-title-ref'>(<span>{'hello'}</span>)</Link>
-        </CardTitleStyles>
+        <SC.CardTitle href={url ? url : '#'} className='card-title'>
+          {metadata.title}
+          <span className='card-title-ref'>{url ? '(link)' : null}</span>
+        </SC.CardTitle>
 
         <CardNav metadata={metadata} />
       </div>
-    </CardStyles>
+    </SC.CardContainer>
   )
 }
