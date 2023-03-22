@@ -1,6 +1,6 @@
 import { faSearch } from "@fortawesome/pro-light-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import styled from "styled-components"
+import styled from "styled-components";
 
 interface Props {
   modalToggle: () => void;
@@ -15,7 +15,7 @@ export default function SearchModal({ modalToggle }: Props) {
       >
         <label>
           <FontAwesomeIcon className="label-icon" icon={faSearch} />
-          <input type="text" name="search" />
+          <input type="text" name="search" placeholder="search"/>
         </label>
       </ModalStyles>
     </OverlayStyles>
