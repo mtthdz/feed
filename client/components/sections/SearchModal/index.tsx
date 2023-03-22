@@ -9,7 +9,7 @@ interface Props {
 
 export default function SearchModal({ modalToggle }: Props) {
   return (
-    <SS.Overlay onClick={() => modalToggle()}>
+    <SS.BlurredOverlay onClick={() => modalToggle()}>
       <SS.ModalForm
         onClick={(e) => e.stopPropagation()}
         onSubmit={(e) => e.preventDefault()}
@@ -19,6 +19,6 @@ export default function SearchModal({ modalToggle }: Props) {
           <SE.Input type="text" name="search" placeholder="search"/>
         </label>
       </SS.ModalForm>
-    </SS.Overlay>
+    </SS.BlurredOverlay>
   )
 }

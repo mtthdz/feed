@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Overlay = styled.section`
+export const BlurredOverlay = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9,7 +9,7 @@ export const Overlay = styled.section`
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #1e1e1e30;
+  background-color: var(--darkGreyBlur);
   backdrop-filter: blur(4px);
   z-index: 5;
 `;
@@ -23,8 +23,8 @@ export const ModalForm = styled.form`
   padding: 1.6rem 2.2rem;
   border: none;
   border-radius: 0.75rem;
-  box-shadow: 0 0 0 1px #1e1e1e40;
-  background-color: #1e1e1e;
+  box-shadow: 0 0 0 1px var(--darkGreyBlur);
+  background-color: var(--darkGrey);
   backdrop-filter: blur(8px);
 
   label {
@@ -37,6 +37,7 @@ export const ModalForm = styled.form`
 
     input {
       flex-grow: 1;
+      font-size: 1.4rem;
     }
   }
 `;
