@@ -1,5 +1,5 @@
 import { sampleEntries } from "@/api/sampleData";
-import PostCard from "@/components/elements/PostCard";
+import PostCard from "@/components/containers/PostCard";
 
 export interface PostMetadata {
   number?: number;
