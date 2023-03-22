@@ -1,5 +1,5 @@
 import { ReactNode, useState } from "react"
-import { WrapperStyles } from "../../styles/WrapperStyles"
+import * as SS from './Layout.styles';
 import PrimaryNav from "../PrimaryNav"
 import SearchModal from "../SearchModal";
 
@@ -15,10 +15,10 @@ export default function Layout({ children }: Props) {
   }
 
   return(
-    <WrapperStyles>
+    <SS.Wrapper>
       <main>{children}</main>
       <PrimaryNav modalToggle={modalToggle} />
       { modalVisible ? <SearchModal modalToggle={modalToggle} /> : null }
-    </WrapperStyles>
+    </SS.Wrapper>
   )
 }

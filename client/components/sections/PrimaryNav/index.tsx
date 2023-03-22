@@ -1,8 +1,8 @@
 import Link from 'next/link';
-import styled from 'styled-components';
+import * as SS from './PrimaryNav.styles';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import { ReactNode } from 'react';
+import { SButton } from '@/components/styles/Button';
 
 interface Props {
   modalToggle: () => void;
@@ -10,62 +10,17 @@ interface Props {
 
 export default function PrimaryNav({ modalToggle }: Props) {
   return (
-    <NavContainer>
+    <SS.BlurredContainer>
       <Link className='site-title' href='/'>feed</Link>
 
-      <MainNavStyles>
-        <button type='button' onClick={() => modalToggle()}>Search</button>
-        <Link href='/createPost'>Create</Link>
-        <Link href='/user'>Account</Link>
-        <Link href='https://github.com/mtthdz/feed' target='_blank'><FontAwesomeIcon icon={ faGithub } /></Link>
-      </MainNavStyles>
-    </NavContainer>
+      <SS.Nav>
+        <ul>
+          <li><SButton type='button' onClick={() => modalToggle()}>Search</SButton></li>
+          <li><Link href='/createPost'>Create</Link></li>
+          <li><Link href='/user'>Account</Link></li>
+          <li><Link href='https://github.com/mtthdz/feed' target='_blank'><FontAwesomeIcon icon={ faGithub } /></Link></li>
+        </ul>
+      </SS.Nav>
+    </SS.BlurredContainer>
   )
 }
-
-const NavContainer = styled.section`
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width: 360px;
-  max-width: 90%;
-  position: fixed;
-  bottom: 20px;
-  left: 50%;
-  margin: 0 auto;
-  padding: 0.8rem 2.2rem;
-  border: none;
-  border-radius: 0.75rem;
-  box-shadow: 0 0 0 1px #1e1e1e40;
-  background-color: #1e1e1e80;
-  backdrop-filter: blur(8px);
-  transform: translate(-50%, 0);
-  z-index: 10;
-
-  .site-title {
-    width: 15%;
-    font-weight: 500;
-    font-size: 1.6rem;
-  }
-
-  a {
-    padding: 2px;
-  }
-`;
-
-const MainNavStyles = styled.div`
-    width: 85%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-end;
-
-    & > * {
-      margin: 0 0.5rem;
-    }
-
-    & > *:last-child {
-      margin-right: 0;
-    }
-`;
