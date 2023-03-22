@@ -6,9 +6,9 @@ export const GlobalStyles = createGlobalStyle`
     --black: #0a0a0a;
     --white: #ffffff;
     --lightGrey: #adadad;
+    --lightGreyBlur: #adadad30;
     --darkGrey: #1e1e1e;
-    --lightGray: var(--lightGrey);
-    --darkGray: var(--darkGrey);
+    --darkGreyBlur: #1e1e1e80;
     --red: #ff6565;
     --green: #29ffa5;
     --maxWidth: 1200px;
@@ -35,7 +35,6 @@ export const GlobalStyles = createGlobalStyle`
     height: auto;
   }
 
-
   ul {
     list-style: none;
   }
@@ -49,22 +48,5 @@ export const GlobalStyles = createGlobalStyle`
       color: var(--lightGrey);
       text-decoration: none;
     }
-  }
-
-  button {
-    background: none;
-    border: none;
-    padding: 2px;
-    color: var(--white);
-    font-family: 'Source_Sans_3', sans-serif;
-    font-size: 1.4rem;
-    font-weight: 300;    
-
-    &:hover,
-    &:focus {
-    color: var(--lightGrey);
-    cursor: pointer;
-    border: none;
-  }
   }
 `
