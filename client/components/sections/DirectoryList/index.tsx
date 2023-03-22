@@ -4,6 +4,7 @@ import PostCard from "@/components/containers/PostCard";
 export interface PostMetadata {
   number?: number;
   title: string;
+  url?: string;
   karma?: number;
   saved: boolean;
   hidden: boolean;

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Input = styled.input`
+export const SInput = styled.input`
   background: none;
   outline: none;
   border: none;

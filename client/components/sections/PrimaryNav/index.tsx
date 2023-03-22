@@ -1,8 +1,8 @@
 import Link from 'next/link';
 import * as SS from './PrimaryNav.styles';
-import * as SE from '../../styles/Button';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { SButton } from '@/components/styles/Button';
 
 interface Props {
   modalToggle: () => void;
@@ -15,7 +15,7 @@ export default function PrimaryNav({ modalToggle }: Props) {
 
       <SS.Nav>
         <ul>
-          <li><SE.Button type='button' onClick={() => modalToggle()}>Search</SE.Button></li>
+          <li><SButton type='button' onClick={() => modalToggle()}>Search</SButton></li>
           <li><Link href='/createPost'>Create</Link></li>
           <li><Link href='/user'>Account</Link></li>
           <li><Link href='https://github.com/mtthdz/feed' target='_blank'><FontAwesomeIcon icon={ faGithub } /></Link></li>

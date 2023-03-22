@@ -1,5 +1,5 @@
+import { SInput } from "@/components/styles/Input";
 import * as SS from "./SearchModal.styles";
-import * as SE from '../../styles/Input';
 import { faSearch } from "@fortawesome/pro-light-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -16,7 +16,7 @@ export default function SearchModal({ modalToggle }: Props) {
       >
         <label>
           <FontAwesomeIcon className="label-icon" icon={faSearch} />
-          <SE.Input type="text" name="search" placeholder="search"/>
+          <SInput type="text" name="search" placeholder="search"/>
         </label>
       </SS.ModalForm>
     </SS.BlurredOverlay>
