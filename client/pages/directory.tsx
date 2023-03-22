@@ -1,7 +1,8 @@
-import PostCard from "@/components/elements/PostCard";
+import PostCard from "@/components/containers/PostCard";
 import DirectoryList from "@/components/sections/DirectoryList";
 import styled from "styled-components"
 
+// TODO: add pagination components
 export default function DirectoryPage() {
   return (
     <DirectoryStyles>
