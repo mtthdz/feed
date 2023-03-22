@@ -1,5 +1,4 @@
 import { createGlobalStyle } from "styled-components";
-// import { Source_Sans_3 } from 'next/font/google';
 
 export const GlobalStyles = createGlobalStyle`
   html {
