@@ -1,34 +1,33 @@
-import { PostMetadata } from "@/components/sections/DirectoryList";
-import Link from "next/link";
+import { PostProps } from "@/components/sections/DirectoryList";
 import * as SC from "./PostCard.styles";
 import CardNav from "../CardNav";
 
 interface Props {
-  metadata: PostMetadata;
+  props: PostProps;
 }
 
-/**
- * TODO: correct numbering; not from meta
- * TODO: align naming convention for posts
- * TODO: break up components
- * TODO: organize styling
- */
-export default function PostCard({ metadata }: Props) {
-  let url = metadata.url;
+// FIXME: destructure props properly
+export default function PostCard({ props }: Props) {
+  let number = props.Number;
+  let meta = props.Metadata;
 
   return (
     <SC.CardContainer>
-      <div className="card-index">
-        <p>{metadata.number}</p>
-      </div>
+      {
+        number ?
+        <div className="card-index">
+          <p>{number}</p>
+        </div> :
+        null
+      }
 
       <div className='card-main'>
-        <SC.CardTitle href={url ? url : '#'} className='card-title'>
-          {metadata.title}
-          <span className='card-title-ref'>{url ? '(link)' : null}</span>
+        <SC.CardTitle href={meta.url ? meta.url : '/post'} className='card-title'>
+          {meta.title}
+          {meta.url ? <span className='card-title-ref'>(link)</span> : null}
         </SC.CardTitle>
 
-        <CardNav metadata={metadata} />
+        <CardNav props={meta} />
       </div>
     </SC.CardContainer>
   )

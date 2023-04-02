@@ -1,22 +1,23 @@
 import Link from "next/link";
 import { CardNavStyles } from "./CardNav.styles";
-import { PostMetadata } from "@/components/sections/DirectoryList";
 import { SButton } from "@/components/styles/Button";
+import { PostMeta } from "@/api/posts";
 
 interface Props {
-  metadata: PostMetadata;
+  props: PostMeta;
 }
 
-export default function CardNav({ metadata }: Props) {
-  let meta = metadata;
+export default function CardNav({ props }: Props) {
+  let meta = props;
+
   return (
     <CardNavStyles>
       <ul>
         <li><SButton>+{meta.karma}</SButton></li>
-        <li><Link href='#'>85 comments</Link></li>
-        <li><Link href='#'>{meta.saved ? 'unsave' : 'save'}</Link></li>
-        <li><Link href='#'>{meta.hidden ? 'unhide' : 'hide'}</Link></li>
-        <li><Link href='#'>{meta.user}</Link></li>
+        <li><Link href='/post'>85 comments</Link></li>
+        <li><SButton>save</SButton></li>
+        <li><SButton>hide</SButton></li>
+        <li><Link href='/user'>{meta.user}</Link></li>
         <li>2 hrs ago</li>
       </ul>
     </CardNavStyles>

@@ -1,25 +1,20 @@
-import { sampleEntries } from "@/api/sampleData";
+import { PostMeta, samplePosts } from "@/api/posts";
 import PostCard from "@/components/containers/PostCard";
+import styled from "styled-components";
 
-export interface PostMetadata {
-  number?: number;
-  title: string;
-  url?: string;
-  karma?: number;
-  saved: boolean;
-  hidden: boolean;
-  user?: string;
-  date?: string;
+export interface PostProps {
+  Number?: number;
+  Metadata: PostMeta;
 }
 
 export default function DirectoryList() {
-  const postData = sampleEntries;
+  const posts: PostMeta[] = samplePosts;
 
   return (
-    <>
-      {postData.map((singlePost, index) => {
-        return <PostCard metadata={singlePost} key={index} />
+    <ul>
+      {posts.map((single: PostMeta, index: number) => {
+        return <PostCard props={{Number: index +1, Metadata: single}} key={index} />
       })}
-    </>
+    </ul>
   )
 }
