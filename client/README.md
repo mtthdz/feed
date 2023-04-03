@@ -19,7 +19,8 @@ This project is broken up in the following manner:
 2. Pages (Next routing)
 3. Components
 4. API
-5. Utilities
+5. State
+6. Utilities
 
 ### 1. Boilerplate & Config ###
 The frontend of this project is built with NextJS and TypeScript. I'm using styled-components (& Babel) for CSS, Jest for testing, and ESLint for linting. 
@@ -42,5 +43,8 @@ The naming convention of custom styled-components is both experimental and based
 ### 4. API ###
 Due to the simplicity of the data consisting of only users, posts and comments, I've decided not to align the API structure with the component structure. Each API endpoint has a dedicated file to handle CRUD, with TypeScript interfaces defined at the top of each file.
 
-### 5. Utilities ###
+### 5. State ###
+While I'm undecided if this project requires scalable state management such as Redux, I'll be storing state in a dedicated directory here.
+
+### 6. Utilities ###
 While not currently being utilized, this directory will hold all functionality that is used across the project, such as date formatting or currency conversion. 
