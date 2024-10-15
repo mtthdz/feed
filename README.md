@@ -2,8 +2,8 @@
 Feed is a hacker news client concept, because the existing client needs dark mode. Pet project, currently WIP.
 
 ## Todo List
-- [ ] setup deployment (Vercel)
-- [ ] setup dummy data
+- [x] setup deployment (Vercel)
+- [x] setup dummy data
 - [ ] create post archive page
 - [ ] create single post page
 - [ ] configure auth (Clerk)
