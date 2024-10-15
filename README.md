@@ -1,6 +1,8 @@
 # Feed
 Feed is a hacker news client concept, because the existing client needs dark mode. Pet project, currently WIP.
 
+Feed is hosted with Vercel [here](https://feed-git-main-mtthdz-team.vercel.app/).
+
 ## Todo List
 - [x] setup deployment (Vercel)
 - [x] setup dummy data
