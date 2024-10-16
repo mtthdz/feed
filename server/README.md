@@ -1,4 +1,4 @@
 Nothing here yet. Will possibly:
 
 - [ ] serve dummy data
-- [ ] (eventually) scrape hackernews & create API
+- [ ] setup intergration with official API [here](https://github.com/HackerNews/API).
