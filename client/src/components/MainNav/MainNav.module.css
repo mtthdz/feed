@@ -1,0 +1,10 @@
+.container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.navItem {
+  margin: 0 0 0 20px;
+}
