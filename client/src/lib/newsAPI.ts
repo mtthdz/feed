@@ -1,6 +1,6 @@
-import { IPost } from "@/types/API";
+import { IStory } from "@/types/API";
 
-export const posts: IPost[] = [
+export const newsAPI: IStory[] = [
   {
     "id": "d3573dfa-a0ae-48a4-8ffd-99c7f8838764",
     "title": "Stephen Hawking has died",

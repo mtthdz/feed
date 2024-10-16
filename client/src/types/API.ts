@@ -5,7 +5,7 @@ export interface IUser {
   upvote_count: number;
 }
 
-export interface IPost {
+export interface IStory {
   id: string;
   title: string;
   user_id: string;
