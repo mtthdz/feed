@@ -6,6 +6,8 @@ Feed is hosted with Vercel [here](https://feed-git-main-mtthdz-team.vercel.app/)
 ## Todo List
 - [x] setup deployment (Vercel)
 - [x] setup dummy data
+- [x] cleanup boilerplate & organize dir
+- [x] create header component
 - [ ] create post archive page
 - [ ] create single post page
 - [ ] configure auth (Clerk)
