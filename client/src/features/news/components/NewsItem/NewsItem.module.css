@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  padding: 14px 0;
+}
+
+.itemOrder {
+  text-align: right;
+  width: 20px;
+}
+
+.navContainer {
+  margin: 0 0 0 14px;
+}
+
+.itemTitle {
+  font-size: 1.4rem;
+}
+
+.itemSubtitle {
+  font-size: 1.0rem;
+  color: #979797;
+  margin: 0 0 0 6px;
+}
