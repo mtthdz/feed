@@ -1,0 +1,24 @@
+.container {
+  margin: 4px 0 0 0;
+}
+
+.navList {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+}
+
+.navItem {
+  font-size: 1.2rem;
+  color: #979797;
+}
+
+.navItem::after {
+  content: '|';
+  margin: 0 10px;
+}
+
+.navItem:last-child::after {
+  content: '';
+}
