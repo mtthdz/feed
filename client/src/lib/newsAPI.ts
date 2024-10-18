@@ -7,7 +7,7 @@ export const newsAPI: IStory[] = [
     "user_id": "bd5bd470-17e7-4879-890e-8d38fedde4d6",
     "user_name": "mtthdz",
     "created_at": "2023-10-15T12:00:00Z",
-    "url_ref": "http://example.com",
+    "url_ref": null,
     "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus urna sed urna ultricies ac tempor dui sagittis.",
     "comment_count": 1234,
     "upvote_count": 5678
@@ -18,7 +18,7 @@ export const newsAPI: IStory[] = [
     "user_id": "a0ee932b-14f5-494f-a0a6-ab3784c9a4b2",
     "user_name": "luxe",
     "created_at": "2023-10-15T12:00:00Z",
-    "url_ref": "http://example.com",
+    "url_ref": null,
     "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus urna sed urna ultricies ac tempor dui sagittis.",
     "comment_count": 250,
     "upvote_count": 7102
