@@ -18,6 +18,12 @@
   font-size: 1.4rem;
 }
 
+.itemLink:hover,
+.itemLink:focus {
+  color: #979797;
+  text-decoration: none;
+}
+
 .itemSubtitle {
   font-size: 1.0rem;
   color: #979797;
