@@ -5,6 +5,7 @@ import styles from './ItemNav.module.css'
 import Link from 'next/link';
 
 // client function to support story voting
+// TODO: isolate voting component into own RCC
 export default function ItemNav(props: { story: IStory }) {
   const navItems = props.story;
 
