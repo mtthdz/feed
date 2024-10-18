@@ -8,8 +8,8 @@ export default function Home() {
   const mockNews: IStory[] = newsAPI;
 
   return (
-    <section className={styles.container}>
+    <main className={styles.container}>
         <NewsList news={mockNews} />
-    </section>
+    </main>
   );
 }

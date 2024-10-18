@@ -4,8 +4,8 @@ import NewsItem from '../NewsItem';
 
 export default function NewsList(props: { news: IStory[] }) {
   return (
-    <div className={styles.container}>
+    <section className={styles.container}>
       {props.news.map((story, index) => <NewsItem story={story} order={index + 1} key={story.id} />)}
-    </div>
+    </section>
   )
 }

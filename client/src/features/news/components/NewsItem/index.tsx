@@ -6,10 +6,13 @@ import Link from 'next/link';
 // TODO: reorg into dedicated post component, its recycled within `/story/[id]`
 export default function NewsItem(props: { story: IStory, order: number }) {
   const story = props.story;
+
+  // external vs internal URL redirect
   const redirect = story.url_ref
     ? story.url_ref
     : `/story/${story.id}`;
 
+  // strips domain protocol & subdomain
   const URLDomain = story.url_ref ?
     story.url_ref
       .replace(/(https?:\/\/(www\.)?)/, '') : null;
