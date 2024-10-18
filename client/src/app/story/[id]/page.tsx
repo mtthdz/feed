@@ -1,4 +1,3 @@
-import ItemNav from "@/features/news/components/ItemNav";
 import { newsAPI } from "@/lib/newsAPI"
 import { IStory } from "@/types/API"
 
@@ -21,7 +20,6 @@ export default function StoryPage({
     <main>
       <p>{story ? story.title : null}</p>
       <p>{story ? story.content : null}</p>
-      <ItemNav story={story} />
     </main>
   )
 }
