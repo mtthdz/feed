@@ -8,9 +8,11 @@ Feed is hosted with Vercel [here](https://feed-git-main-mtthdz-team.vercel.app/)
 - [x] setup dummy data
 - [x] cleanup boilerplate & organize dir
 - [x] create header component
-- [ ] create post archive page
-- [ ] create single post page
+- [x] create post archive page
+- [x] create single post page
+- [x] create single user page
 - [ ] configure auth (Clerk)
+- [ ] populate post comments
 - [ ] post creation component
 - [ ] comment creation component
-- [ ] Hackernews API?
+- [ ] Hackernews API
