@@ -15,6 +15,7 @@ export interface IStory {
   content: string | null;
   comment_count: number;
   upvote_count: number;
+  descendants: number; // total comment count
 }
 
 export interface IComment {
@@ -24,7 +25,22 @@ export interface IComment {
   user_name: string;
   created_at: string;
   content: string;
-  parent_ref: string[];
+  parent_ref: string;
   child_ref: string[];
   upvote_count: number;
+}
+
+// folding story and comment types into one to 
+// reflect potential API structure
+export interface IPost {
+  id: string;
+  user: string;
+  user_id: string;
+  title: string | null;
+  content: string | null;
+  url: string | null;
+  parent: string | null;
+  children: string[];
+  descendants: number;
+  score: number;
 }
