@@ -19,3 +19,7 @@ Feed is hosted with Vercel [here](https://feed-git-main-mtthdz-team.vercel.app/)
 - [ ] post + comment vote API
 - [ ] post + comment save/hide API
 - [ ] Hackernews API
+
+
+## notes
+- (10/28) Following Hackernew's API structure, I've merged my stories and comments interfaces into one, for simplicity and help keep payload shape consistent. I've also used it as a way to mandate nullified values in the payload, for when I get to building my own API.
