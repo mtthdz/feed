@@ -1,5 +1,5 @@
-import { newsAPI } from "@/lib/newsAPI"
-import { IStory } from "@/types/API"
+import { mockStories } from "@/lib/mockStories"
+import { IPost } from "@/types/API"
 
 // TODO: fix type error
 export default function StoryPage({
@@ -10,11 +10,11 @@ export default function StoryPage({
 
   if (!id) return <div>loading...</div>
 
-  function getStory(id: string): IStory | undefined {
-    return newsAPI.find(story => story.id === id);
+  function getStory(id: string): IPost | undefined {
+    return mockStories.find(story => story.id === id);
   }
 
-  const story: IStory | undefined = getStory(id);
+  const story: IPost | undefined = getStory(id);
 
   return (
     <main>

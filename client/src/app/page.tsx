@@ -1,15 +1,13 @@
-import { newsAPI } from "@/lib/newsAPI";
+import { mockStories } from "@/lib/mockStories";
 import styles from "./page.module.css";
-import { IStory } from "@/types/API";
 import NewsList from "@/features/news/components/NewsList";
 
 // temporarily news feed
+// using mock data from @lib
 export default function Home() {
-  const mockNews: IStory[] = newsAPI;
-
   return (
     <main className={styles.container}>
-        <NewsList news={mockNews} />
+        <NewsList news={mockStories} />
     </main>
   );
 }
