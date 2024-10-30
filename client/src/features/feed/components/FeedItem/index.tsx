@@ -1,10 +1,10 @@
 import { IPost } from '@/types/API';
-import styles from './NewsItem.module.css';
+import styles from './FeedItem.module.css';
 import ItemNav from '../ItemNav';
 import Link from 'next/link';
 
 // TODO: reorg into dedicated post component, its recycled within `/story/[id]`
-export default function NewsItem(props: { story: IPost, order: number }) {
+export default function FeedItem(props: { story: IPost, order: number }) {
   const story = props.story;
 
   // external vs internal URL redirect
