@@ -1,6 +1,6 @@
-import styles from './MainNav.module.css';
+import styles from './SiteNav.module.css';
 
-export default function MainNav() {
+export default function SiteNav() {
   return (
     <ul className={styles.container}>
       <li className={styles.navItem}>
