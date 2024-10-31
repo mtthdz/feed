@@ -9,10 +9,10 @@ export default function StoryContent(props: { content: IPost }) {
 	const content = props.content;
 
 	return (
-		<div className={styles.container}>
+		<section className={styles.container}>
 			<p className={styles.contentTitle}>{content.title}</p>
 			<p>{content.content}</p>
 			<ItemNav story={content} />
-		</div>
+		</section>
 	)
 }
