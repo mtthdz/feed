@@ -7,7 +7,7 @@ import FeedList from "@/features/feed/components/FeedList";
 export default function Home() {
   return (
     <main className={styles.container}>
-        <FeedList news={mockStories} />
+        <FeedList stories={mockStories} />
     </main>
   );
 }
