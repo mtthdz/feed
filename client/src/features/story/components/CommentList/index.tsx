@@ -5,7 +5,12 @@ import CommentItem from '../CommentItem';
 export default function CommentList(props: { comments: IPost[]}) {
   return (
     <section className={styles.container}>
-      {props.comments.map((comment) => <CommentItem comment={comment} key={comment.id} />)}
+      {props.comments ?
+        props.comments.map((comment) => (
+          <CommentItem comment={comment} key={comment.id} />
+        ))
+        : <p>no comments</p>
+      }
     </section>
   )
 }

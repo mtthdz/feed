@@ -1,7 +1,7 @@
 import { IPost } from '@/types/API';
 import styles from './FeedItem.module.css';
-import ItemNav from '../ItemNav';
 import Link from 'next/link';
+import PostNav from '@/features/nav/components/PostNav';
 
 // TODO: reorg into dedicated post component, its recycled within `/story/[id]`
 export default function FeedItem(props: { story: IPost, order: number }) {
@@ -31,7 +31,7 @@ export default function FeedItem(props: { story: IPost, order: number }) {
             }
           </Link>
         </p>
-        <ItemNav story={story} />
+        <PostNav post={story} />
       </div>
     </div>
   )
