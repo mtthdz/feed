@@ -1,3 +1,5 @@
+import StoryContent from "@/features/story/components/StoryContent";
+import { mockComments } from "@/lib/mockComments";
 import { mockStories } from "@/lib/mockStories"
 import { IPost } from "@/types/API"
 
@@ -18,8 +20,12 @@ export default function StoryPage({
 
   return (
     <main>
-      <p>{story ? story.title : null}</p>
-      <p>{story ? story.content : null}</p>
+      {story ?
+        (
+          <StoryContent content={story} />
+        )
+        : <p>something went wrong.</p>
+      }
     </main>
   )
 }
