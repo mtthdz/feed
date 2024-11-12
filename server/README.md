@@ -2,7 +2,7 @@
 WIP. Will be a simple Express API.
 
 ## Todo List
-- [ ] configure TS
+- [x] configure TS
 - [ ] setup post endpoint
 - [ ] auth wrapper
 - [ ] deploy on Vercel
