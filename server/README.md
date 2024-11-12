@@ -1,6 +1,8 @@
 # feed server
 WIP. Will be a simple Express API.
 
+trying out ignore build step config in Vercel
+
 ## Todo List
 - [ ] configure TS
 - [ ] setup post endpoint
