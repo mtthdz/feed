@@ -1,4 +1,13 @@
-Nothing here yet. Will possibly:
+# feed server
+WIP. Will be a simple Express API.
 
-- [ ] serve dummy data
-- [ ] setup intergration with official API [here](https://github.com/HackerNews/API).
+## Todo List
+- [ ] configure TS
+- [ ] setup post endpoint
+- [ ] auth wrapper
+- [ ] deploy on Vercel
+- [ ] (API) post endpoint (story + comment)
+- [ ] (API) vote endpoint
+- [ ] (API) comment payload shape
+- [ ] (API) comment pagination, nested vs parent
+- [ ] (API) configure auth (Clerk?)
