@@ -20,14 +20,9 @@
 	],
 	"plugins": ["prettier", "@typescript-eslint", "react", "react-hooks"],
 	"rules": {
-		"prettier/prettier": [
-			//or whatever plugin that is causing the clash
-			"error",
-			{
-				"tabWidth": 2
-			}
-		]
-	},
+    // "quotes": ["error", "single"],
+    // "indent": ["error", "tab"]
+  },
 	"settings": {
 		"react": {
 			"version": "detect"
