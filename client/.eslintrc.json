@@ -20,8 +20,8 @@
 	],
 	"plugins": ["prettier", "@typescript-eslint", "react", "react-hooks"],
 	"rules": {
-    // "quotes": ["error", "single"],
-    // "indent": ["error", "tab"]
+    "quotes": ["error", "single"],
+    "indent": ["error", "tab"]
   },
 	"settings": {
 		"react": {
